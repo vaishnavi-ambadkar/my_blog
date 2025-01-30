@@ -141,7 +141,7 @@ function AddPostPage() {
       if (editingPost) {
         // Update the existing post
         const response = await axios.put(
-          `http://localhost:5000/api/posts/${editingPost._id}`,
+          `https://my-blog-api-ashen.vercel.app/api/posts/${editingPost._id}`,
           formData,
           {
             headers: {
@@ -154,7 +154,7 @@ function AddPostPage() {
       } else {
         // Add a new post
         const response = await axios.post(
-          "http://localhost:5000/api/posts",
+          "https://my-blog-api-ashen.vercel.app/api/posts",
           formData,
           {
             headers: {
